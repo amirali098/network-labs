@@ -4,7 +4,8 @@
 Observe Root Bridge election and port roles in a 3-switch triangle with default priorities.
 
 ## Topology
-![topology](topology.png)
+![topology](topology1.png)
+![topology](topology2.png)
 
 | Switch | Bridge ID (MAC) |
 |---|---|
