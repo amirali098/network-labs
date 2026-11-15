@@ -29,15 +29,16 @@ The priority shown is 24577 = 24576 (base priority) + 1 (sys-id-ext, the VLAN ID
 | | Lab 01 (default) | Lab 02 (root primary) |
 |---|---|---|
 | Root Bridge | Switch3 (lowest MAC) | Switch7 (lowest priority) |
-| Blocking port | Fa0/2 on Switch7 | TODO: switch + port |
+| Blocking port | Fa0/2 on Switch7   | Fa0/1 on Switch0|
 
 ## Analysis
 - Switch0 and Switch3 are both directly connected to Switch7 over
-  FastEthernet, so each has Root Path Cost 19.
-- TODO: Root Port of Switch0 and Switch3 (from `show spanning-tree`).
+  FastEthernet, so each has a Root Path Cost of 19.
+- The Root Ports are Fa0/2 on Switch0 and Fa0/2 on Switch3.
 - The Switch0 <-> Switch3 link has no Root Port on either side, so the
-  Designated Port is decided by Bridge ID. TODO: which one is lower, and
-  which side ends up Blocking.
+  Bridge ID decides which side becomes the Designated Port.
+- Switch3 has the smaller Bridge ID, so its port becomes the Designated Port.
+- Fa0/1 on Switch0 becomes the Blocking (Alternate) port.
 
 ## Verification
 `show spanning-tree` output from each switch is in `outputs/`.
