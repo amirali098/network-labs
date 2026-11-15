@@ -4,12 +4,13 @@
 (1 or 2 sentences: what you wanted to measure and why)
 
 ## Topology
-![topology](Screenshot (1265).png)
-![topology](Screenshot (1266).png)
-![topology](Screenshot (1268).png)
-![topology](Screenshot (1269).png)
-![topology](Screenshot (1270).png)
-![topology](Screenshot (1271).png)
+![topology](Screenshot(1265).png)
+![topology](Screenshot(1266).png)
+![topology](Screenshot(1268).png)
+![topology](Screenshot(1269).png)
+![topology](Screenshot(1270).png)
+![topology](Screenshot(1271).png)
+
 
 | Device | Bridge ID MAC | Connected to |
 |---|---|---|
