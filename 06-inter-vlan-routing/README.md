@@ -40,7 +40,9 @@ Default gateways: 192.168.10.254 (VLAN 10) and 192.168.20.254 (VLAN 20).
   back, so the Fa0/24 trunk carries them twice.
 
 ## What I learned
-- (2 bullets in your own words.)
-
-## Verification
-Outputs are in `outputs/`.
+- Devices in different VLANs need a Layer 3 device (a router) to communicate.
+- This design is called router on a stick: one trunk link, with one
+  subinterface for each VLAN.
+- A PC sends traffic for another network to its default gateway: the
+  destination MAC address is the gateway's, and the destination IP
+  address is the final host's.
