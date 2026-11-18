@@ -48,4 +48,6 @@ Router5 and Router6 use the same pattern with their own networks.
 - Ethernet links elect a DR and a BDR, even with only two routers on the link.
 
 ## What I learned
-- (2 bullets in your own words.)
+- OSPF removes a route when the link fails, and a static route does not.
+- The metric is the sum of the outgoing interface costs along the path.
+- (One bullet in your own words.)
